@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <main>
+    <header>
+      <a class="header-logo" href="#"><img src="./images/logo.svg" alt="Logo"></a>
+      <div class="menu-btn">
+        <img src="./images/icon-menu.svg" alt="menu button">
+      </div>
+      <div class="menu-modal is-close">
+        <div class="dropdown-menu">
+          <div class="menu-close-wrap">
+            <div class="menu-close-btn">
+              <img src="./images/icon-close-menu.svg" alt="">
+            </div>
+          </div>
+          <div class="menu-content">
+            <ul class="select">
+              <li class="features-select select-item">Features 
+                <img class="features-collapsed select-item-icon" src="./images/icon-arrow-down.svg" alt="">
+                <img class="features-expanded select-item-icon hide" src="./images/icon-arrow-up.svg" alt="">
+                <ul class="features-content is-close-content">
+                  <li><img src="./images/icon-todo.svg" alt="">Todo List</li>
+                  <li><img src="./images/icon-calendar.svg" alt="">Calendar</li>
+                  <li><img src="./images/icon-reminders.svg" alt="">Reminders</li>
+                  <li><img src="./images/icon-planning.svg" alt="">Planning</li>
+                </ul>
+              </li>
+              <li class="company-select select-item">Company 
+                <img class="company-collapsed select-item-icon" src="./images/icon-arrow-down.svg" alt="">
+                <img class="company-expanded select-item-icon hide" src="./images/icon-arrow-up.svg" alt="">
+                <ul class="company-content is-close-content">
+                  <li>History</li>
+                  <li>Our Team</li>
+                  <li>Blog</li>
+                </ul>
+              </li>
+              <li class="select-item">Careers</li>
+              <li class="select-item">About</li>
+            </ul>
+            <div class="account">
+              <button>Login</button>
+              <button>Register</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <div class="container">
+      <picture>
+        <source media="(min-width: 768px)" srcset="./images/image-hero-desktop.png">
+        <img src="./images/image-hero-mobile.png" alt="">
+      </picture>
+      <div class="content">
+        <h1>
+          Make remote work
+        </h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+  
+        <button>
+            Learn more
+        </button>
+        
+        <div class="content-logo">
+          <div class="wrap-logo">
+            <img src="./images/client-databiz.svg" alt="">
+          </div>
+          <div class="wrap-logo">
+            <img src="./images/client-audiophile.svg" alt="">
+          </div>
+          <div class="wrap-logo">
+            <img src="./images/client-meet.svg" alt="">
+          </div>
+          <div class="wrap-logo">
+            <img src="./images/client-maker.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="#">Quang Binh</a>.
+    </footer>
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+</html>
