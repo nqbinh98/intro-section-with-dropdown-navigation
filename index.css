@@ -112,7 +112,7 @@ button:hover {
 }
 
 .content-logo img {
-    max-width: 80px;
+    max-width: 12vw;
     max-height: 28px;
 }
 
@@ -158,6 +158,10 @@ button:hover {
     list-style: none;
 }
 
+.dropdown-menu .select .select-item:hover {
+    color: var(--gray-950);
+}
+
 .dropdown-menu .select .select-item{
     cursor: pointer;
     padding: 12px 0;
@@ -184,10 +188,13 @@ button:hover {
     border: none;
 } 
   
+.dropdown-menu .account button:hover{
+    color: var(--gray-950);
+}
 .dropdown-menu .account button{
     color: var(--gray-500);
     background-color: white;
-    font-size: 14px;
+    font-size: 16px;
     border: 2px solid var(--gray-500);
     padding: 12px 24px;
     width: 100%;
@@ -201,23 +208,41 @@ button:hover {
     visibility: visible;
 }
 
-.is-close-content {
+.select-item.is-active .dropdown-content{
+    transform: scaleY(100%);
+    opacity: 1;
+    max-height: 500px;
+    padding: 16px 20px;
+    visibility: visible;
+} 
+
+.select-item.is-active .icon-arrow-down{
+    display: none;
+} 
+
+.select-item.is-active .icon-arrow-up{
+    display: inline-block;
+} 
+
+.dropdown-content {
     opacity: 0;
     max-height: 0;
     visibility: hidden;
     transform: scaleY(0);
-    padding: 0 !important;
-}
-
-.features-content, .company-content {
-    padding: 16px 20px;
     transform-origin: top;
     list-style: none;
     transition: 0.3s ease-in-out;
 }
 
+.features-content li:hover, .company-content li:hover {
+    color: var(--gray-950);
+    transform: translateX(2px);
+}
+
 .features-content li, .company-content li {
     padding: 12px 0;
+    color: var(--gray-500);
+    transition: 0.3s ease-in-out;
 }
 
 .features-content li img{
