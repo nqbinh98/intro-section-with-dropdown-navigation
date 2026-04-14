@@ -10,7 +10,6 @@
     --gray-950: hsl(0, 0%, 8%);
 }
 
-/* Weights: 500, 700 */
 body {
     font-size: 18px;
     font-family: 'Epilogue', sans-serif;
@@ -60,7 +59,7 @@ picture img {
 header {
     display: flex;
     justify-content: space-between;
-        align-items: flex-end;
+    align-items: flex-end;
     font-size: 32px;
     font-weight: 700;
     padding: 16px;
@@ -107,8 +106,6 @@ button:hover {
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
     justify-items: center;
-    /* display: flex;
-    flex-direction: row; */
     align-items: center;
     gap: 12px;
     padding: 32px 0;
@@ -245,8 +242,7 @@ button:hover {
         width: 100%;
         flex: 1 1 50%;
         padding: 0;
-        /* justify-content: flex-end; */
-            justify-content: center;
+        justify-content: center;
         gap: 4vw;
     }
 
@@ -256,7 +252,6 @@ button:hover {
 
     .content h1 {
         font-size: clamp(36px, 6.2vw, 76px);
-        /* font-size: 6vw; */
     }
 
     .content p {
